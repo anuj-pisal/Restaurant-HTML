@@ -1,0 +1,263 @@
+<html>
+<head>
+    <title>The Green Leaf</title>
+    <link rel="shortcut icon" href="00_title_bar_image.png" type="image/x-icon">
+</head>
+    <style>
+         #homehead{
+            background-image: url("00_leaf_background.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            border: solid 3px white;
+        }
+
+        .navbar{
+            background-color:white;
+            border-radius: 30px;
+            margin-top: 15px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .navbar li{
+            float:left;
+            list-style: none;  
+            margin: 13px 30px;
+            padding-top: 5px;
+        }
+
+        .navbar li a{
+            padding: 3px 3px;  
+            text-decoration: none;
+            color:rgb(11, 106, 11);
+        }
+
+        .navbar li a:hover{
+            color:lawngreen;
+        }
+
+        .navbar input{
+            border:solid 2px darkgreen;
+            border-radius: 14px;
+            padding: 15px 15px;
+            width: 240px;
+            height: 31px;
+        }
+
+        .searchbox{
+            float:right;
+            padding:12px 50px;
+        }
+
+        #follow{
+            display:flex;
+            justify-content: center;
+        }
+
+        #last{
+            background-color: rgb(199, 196, 196);
+            padding-top: 25px ;
+            padding-bottom: 25px;
+        }
+        #search-icon {
+            width: 30px;
+            margin: -10px;
+            padding-left: 18px;
+            padding-top: 9px;
+            border-radius: 50%;
+        }
+        
+        #search-icon:hover {
+            width: 32px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(25, 55, 25)">
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="1_home.html">Home</a></li>  
+            <li><a href="2_about_us.html">About us</a></li>
+            <li><a href="4_branches.html">Branches</a></li>
+            <li><a href="5_contact_us.html">Order Food</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="6_log_in.html">Log In</a></li>
+            <li id="userwelcome">Welcome, </li>
+            <div class="searchbox">
+            <input type="search" name="searchbox" id="search" placeholder="Search this website">
+            <img src="search.png" alt="Loading.." id="search-icon" onclick="searchAndHighlight()">
+            </div>
+            
+        </ul>
+    </nav>
+    `<br>
+
+    <!-- heading of home -->
+    <div id="homehead">
+        <p>&nbsp;</p>
+        <h1 style="font-size:100px;"><center><font face="Lucida Handwriting" color="white">The Green Leaf</font></center></h1>
+        <h3 style="font-size:35px;"><center><font face="Lucida Handwriting" color="white">• Indian &nbsp;• Italian &nbsp;• Continental</font></center></h3>
+        <p>&nbsp;</p>
+    </div>
+
+    <br><br><hr width="35%">
+    <h1 style="color:white"><center><font face="Lucida Handwriting" color="white">Our Branches</font></center></h1>
+    <hr width="35%"><br><br><br>
+
+    <!-- branches -->
+    
+    <!-- 1)Mumbai -->
+    <center><b style="font-size:25px"><font face="Lucida Handwriting" color="white">The Green Leaf,</font><font face="Lucida Handwriting" color="crimson"> Mumbai</font></b></center>
+
+    <img src="00_mumbai_23.webp" alt="Loading..." height="200px" style="float:left; margin:50px 25px 10px 150px; border:2px solid white;">
+    <p style="margin:70px 10px 0px 10px; font-size:20px;"><b><font face="Lucida Handwriting" color="white">• </font><font face="Lucida Handwriting"color="crimson">Location :</font></b></p>
+    <b style="margin:25px 10px 0px 10px; font-size:20px;"><font face="Lucida Handwriting" color="white">256, Elphinstone Road, Bandra-Kurla (w) Complex, Mumbai</font></b>
+
+    <p style="margin:40px 10px 0px 10px; font-size:20px;"><b><font face="Lucida Handwriting" color="white">• </font><font face="Lucida Handwriting"color="crimson">Contact no :</font></b></p>
+    <b style="margin:25px 10px 0px 10px; font-size:20px;"><font face="Lucida Handwriting" color="white">1800-500-500</font></b>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <hr width="85%"><br><br>
+
+    <!-- 2)Delhi-->
+    <center><b style="font-size:25px;"><font face="Lucida Handwriting" color="white">The Green Leaf,</font><font face="Lucida Handwriting" color="crimson"> Delhi</font></b></center>
+
+    <img src="00_delhi_24.jpg" alt="Loading..." height="200px" style="float:left; margin:50px 56px 10px 175px; border:2px solid white;">
+    <p style="margin:82px 10px 0px 10px; font-size:20px;"><b><font face="Lucida Handwriting" color="white">• </font><font face="Lucida Handwriting"color="crimson">Location :</font></b></p>
+    <b style="margin:25px 10px 0px 10px; font-size:20px;"><font face="Lucida Handwriting" color="white">Mt. Agnel Road,46, Connaught Place, New Delhi</font></b>
+
+    <p style="margin:40px 10px 0px 10px; font-size:20px;"><b><font face="Lucida Handwriting" color="white">• </font><font face="Lucida Handwriting"color="crimson">Contact no :</font></b></p>
+    <b style="margin:25px 10px 0px 10px; font-size:20px;"><font face="Lucida Handwriting" color="white">1800-600-600</font></b>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <hr width="85%">
+    <br><br>
+
+    <!-- 3)Kolkata-->
+    <center><b style="font-size:25px;"><font face="Lucida Handwriting" color="white">The Green Leaf,</font><font face="Lucida Handwriting" color="crimson"> Kolkata</font></b></center>
+
+    <img src="00_kolkata_25.webp" alt="Loading..." height="200px" style="float:left; margin:50px 56px 10px 125px; border:2px solid white;">
+    <p style="margin:82px 10px 0px 10px; font-size:20px;"><b><font face="Lucida Handwriting" color="white">• </font><font face="Lucida Handwriting"color="crimson">Location :</font></b></p>
+    <b style="margin:25px 10px 0px 10px; font-size:20px;"><font face="Lucida Handwriting" color="white">St. Xavier's Building, Green Leaf Road, Kolkata</font></b>
+
+    <p style="margin:40px 10px 0px 10px; font-size:20px;"><b><font face="Lucida Handwriting" color="white">• </font><font face="Lucida Handwriting"color="crimson">Contact no :</font></b></p>
+    <b style="margin:25px 10px 0px 10px; font-size:20px;"><font face="Lucida Handwriting" color="white">1800-200-200</font></b>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <hr width="85%">
+    <br><br>
+
+    <!-- 4)Banglore-->
+    <center><b style="font-size:25px;"><font face="Lucida Handwriting" color="white">The Green Leaf,</font><font face="Lucida Handwriting" color="crimson"> Banglore</font></b></center>
+
+    <img src="00_banglore_26.webp" alt="Loading..." height="200px" style="float:left; margin:50px 72px 10px 143px; border:2px solid white;">
+    <p style="margin:82px 10px 0px 10px; font-size:20px;"><b><font face="Lucida Handwriting" color="white">• </font><font face="Lucida Handwriting"color="crimson">Location :</font></b></p>
+    <b style="margin:25px 10px 0px 10px; font-size:20px;"><font face="Lucida Handwriting" color="white">Marina Mall, Waterloo Road, Bangalore</font></b>
+
+    <p style="margin:40px 10px 0px 10px; font-size:20px;"><b><font face="Lucida Handwriting" color="white">• </font><font face="Lucida Handwriting"color="crimson">Contact no :</font></b></p>
+    <b style="margin:25px 10px 0px 10px; font-size:20px;"><font face="Lucida Handwriting" color="white">1800-111-111</font></b>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <hr width="85%">
+    <br><br>
+
+    <!-- 5)Chennai-->
+    <center><b style="font-size:25px;"><font face="Lucida Handwriting" color="white">The Green Leaf,</font><font face="Lucida Handwriting" color="crimson"> Chennai</font></b></center>
+
+    <img src="00_chennai_27.jpg" alt="Loading..." height="200px" style="float:left; margin:50px 52px 10px 121px; border:2px solid white;">
+    <p style="margin:82px 10px 0px 10px; font-size:20px;"><b><font face="Lucida Handwriting" color="white">• </font><font face="Lucida Handwriting"color="crimson">Location :</font></b></p>
+    <b style="margin:25px 10px 0px 10px; font-size:20px;"><font face="Lucida Handwriting" color="white">220,Westend Avenue,Chennai</font></b>
+
+    <p style="margin:40px 10px 0px 10px; font-size:20px;"><b><font face="Lucida Handwriting" color="white">• </font><font face="Lucida Handwriting"color="crimson">Contact no :</font></b></p>
+    <b style="margin:25px 10px 0px 10px; font-size:20px;"><font face="Lucida Handwriting" color="white">1800-250-250</font></b>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <hr width="85%">
+    <br><br>
+
+     <!-- Follow us on -->
+    
+     <center><b style="color: white; font-size: 35px;"><font face="Lucida Handwriting">Follow us on</font></b></center>
+     <br><br>
+     <div id="follow">
+         <a href="https://www.instagram.com/greenleafrestaurant" target="_blank"><img src="00_insta_19.png" alt="Loading..." height="45px"></a>
+         <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>@greenleafrestaurant</b></font></p> 
+         <a href="https://www.facebook.com/greenleafrestaurant" target="_blank"><img style="margin-left:5%;" src="00_facebook_20.webp" alt="Loading..." height="45px"></a>
+         <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>@greenleafrestaurant</b></font></p>
+         <a href="https://twitter.com/greenleaf092" target="_blank"><img style="margin-left:5%;" src="00_twitter_21.png" alt="Loading..." height="45px"></a>
+         <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>@greenleaf092</b></font></p>
+         <a href="https://www.youtube.com/channel/greenleafrestaurant" target="_blank"><img style="margin-left:5%;" src="00_youtube_22.png" alt="Loading..." height="45px"></a>
+         <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>Green Leaf Restaurant</b></font></p>
+     </div>
+ 
+ <footer style="background-color: rgb(25, 55, 25); color: white; padding: 20px 0;">
+     <div style="text-align: center;">
+         <h3 style="font-family: 'Lucida Handwriting';">Connect with Us</h3>
+         <p style="margin: 5px 0;">For reservations and inquiries, call us at <b>76-66-77-88-99</b></p>
+         <p style="margin: 5px 0;">Email: <a href="mailto:info@greenleafrestaurant.com" style="color: gold;">info@greenleafrestaurant.com</a></p>
+ 
+         <br><br>
+         
+         <div id="last" style="color: black;">
+         <p style="font-size: 14px;">&copy; 2022 The Green Leaf Company Pvt Ltd. All Rights Reserved.</p>
+         <p style="font-size: 14px;"><a href="1_home.html" style="color: darkgreen;">Home</a> | <a href="2_about_us.html" style="color: darkgreen;">About Us</a> | <a href="5_contact_us.html" style="color: darkgreen;">Order</a></p>
+         </div>
+     </div>
+ </footer>
+    <script>
+
+        function searchAndHighlight() {
+            var searchQuery = document.getElementById('search').value.trim();
+            
+            if (searchQuery === "") {
+                alert("Please enter a search term.");
+                return;
+            }
+    
+            // Remove existing highlights if any
+            removeHighlights();
+    
+            // Find the search term on the page
+            var bodyText = document.body.innerHTML;
+            var searchPattern = new RegExp('('+ searchQuery +')', 'gi');
+    
+            if (searchPattern.test(bodyText)) {
+                // Highlight the search term
+                document.body.innerHTML = bodyText.replace(searchPattern, '<span class="highlight">$1</span>');
+    
+                // Scroll to the first instance of the highlighted term
+                var firstHighlight = document.querySelector(".highlight");
+                if (firstHighlight) {
+                    firstHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    firstHighlight.style.color = "red";
+                }
+            } else {
+                alert("No matches found.");
+            }
+        }
+    
+        function removeHighlights() {
+            // Remove any existing highlights
+            var highlightedElements = document.querySelectorAll(".highlight");
+            highlightedElements.forEach(function(el) {
+                el.outerHTML = el.innerHTML; // remove the span tags
+            });
+        }
+
+        
+const storedUser = JSON.parse(localStorage.getItem('user'));
+
+// If user data is found, display the username
+if (storedUser && storedUser.username) {
+    document.getElementById('userwelcome').textContent = "Welcome, " + storedUser.username;
+} else {
+    document.getElementById('userwelcome').textContent = 'Welcome, Guest!'; // If no user is logged in
+}
+      
+
+    </script>
+</body>
+</html>

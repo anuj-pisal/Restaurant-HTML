@@ -1,0 +1,319 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="00_title_bar_image.png" type="image/x-icon">
+    <title>The Green Leaf</title>
+    <style>
+        #homehead{
+            background-image: url("00_leaf_background.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            border: solid 3px white;
+        }
+
+        .navbar{
+            background-color:white;
+            border-radius: 30px;
+            margin-top: 15px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .navbar li{
+            float:left;
+            list-style: none;  
+            margin: 13px 30px;
+            padding-top: 5px;
+        }
+
+        .navbar li a{
+            padding: 3px 3px;  
+            text-decoration: none;
+            color:rgb(11, 106, 11);
+        }
+
+        .navbar li a:hover{
+            color:lawngreen;
+        }
+
+        .navbar input{
+            border:solid 2px darkgreen;
+            border-radius: 14px;
+            padding: 15px 15px;
+            width: 240px;
+            height: 31px;
+        }
+
+        .searchbox{
+            float:right;
+            padding:12px 50px;
+        }
+
+        #video{
+            background-image: url("00_leaf_background.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            border: solid 3px white;
+        }
+
+        #image1{
+            float:left;
+            border:2px solid white;
+            margin: 10px 50px 10px 20px ;
+        }
+
+        #image2{
+            float:right;
+            border:2px solid white;
+            margin: 30px 20px 20px 30px ; 
+        }
+
+        #image3{
+            float:left;
+            border:2px solid white;
+            margin:40px 50px 20px 20px;
+        }
+
+        #image4{
+            float:right;
+            border:2px solid white;
+            margin: 30px 20px 20px 30px;
+        }
+
+        #food_order button{
+            border:3px solid white;
+            border-radius: 18px;
+            background-color:darkgreen ;
+        }
+
+        
+
+
+        #food_order a{
+            text-decoration: none;
+            color:white;
+            padding: 10px 10px
+        }
+
+        #food_order a:hover{
+            color:crimson;
+        }
+
+        #follow{
+            display:flex;
+            justify-content: center;
+        }
+
+        #last{
+            background-color: rgb(199, 196, 196);
+            padding-top: 25px ;
+            padding-bottom: 25px;
+        }
+
+        #search-icon {
+            width: 30px;
+            margin: -10px;
+            padding-left: 18px;
+            padding-top: 9px;
+            border-radius: 50%;
+        }
+
+        #search-icon:hover {
+            width: 32px;
+        }
+
+        .yellow {
+            color: gold;
+        }
+
+    </style>
+
+    
+
+<body style="background-color:rgb(25, 55, 25);">
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="1_home.html">Home</a></li>  
+            <li><a href="2_about_us.html">About us</a></li>
+            <li><a href="4_branches.html">Branches</a></li>
+            <li><a href="5_contact_us.html">Order Food</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="6_log_in.html">Log In</a></li>
+            <li id="userwelcome">Welcome, </li>
+            <div class="searchbox">
+            <div id="searchbox">            
+            <input type="search" name="searchbox" id="search" placeholder="Search this website">
+            <img src="search.png" alt="Loading.." id="search-icon" onclick="searchAndHighlight()">
+            </div>
+            
+        </ul>
+    </nav>
+    `<br>
+
+   
+
+    <!-- heading of home -->
+    <div id="homehead">
+        <p>&nbsp;</p>
+        <h1 style="font-size:100px;"><center><font face="Lucida Handwriting" color="white">The Green Leaf</font></center></h1>
+        <h3 style="font-size:35px;"><center><font face="Lucida Handwriting" color="white">• Indian &nbsp;• Italian &nbsp;• Continental</font></center></h3>
+        <p>&nbsp;</p>
+    </div>
+
+    <!-- main content -->
+    <div>
+        <center><p style="color: white; font-size: 35px;"><font face="Lucida Handwriting">Welcome To Green Leaf Restaurant</font></p></center>
+        <hr>
+        <br>
+        <center><p style="margin:1px 20px; color:white; font-size: 15px; padding-left: 20px; padding-right: 20px;"><font face="Lucida Handwriting">Our Kitchen strives to source local, sustainable and organic when possible. We work hard to source premium ingredients and we cook everything from scratch with love. We also do our best to pay our employees living wages (tips are shared with all employees, including kitchen staff) and to reduce our environmental footprint wherever we can. Overall, these factors translate to higher menu prices, but we hope that you find value and feel a sense of comfort in knowing that we aim to get better everyday at doing what is important to us.</font></p></center><br>
+        <hr><br><br>
+       
+        <!-- Adding videos -->
+        <div id="video">
+            <video src="00_video2.mp4" width="420" controls style="margin:30px 30px 30px 45px; border:3px solid white"></video>
+            <video src="00_video1.mp4" width="420" controls style="margin:30px 30px 30px 30px; border:3px solid white"></video>
+            <video src="00_video3.mp4" width="420" controls style="margin:30px 30px 30px 30px; border:3px solid white"></video>
+        </div>
+        <br><br><hr><br>
+
+        <!-- General information -->
+        <img id="image1" src="00_restaurent_08.jpg" alt="Loading...">
+        <font face="Lucida Handwriting"><ul style="color:white; font-size:25px; margin:25px 50px 0px 20px">
+            <li> Commitment to food safety makes us the preferred restaurant for our customers.</li>
+            <li>We <span class="yellow">prepare food live in front of customers</span> for the best experience.</li>
+            <li>Our <span class="yellow">dishes cater to all age groups</span> with a taste everyone can enjoy.</li>
+            <li>Introducing the Green Leaf concept for the first time, offering a unique flavor.</li>
+            <li><span class="yellow">All recipes are scientifically prepared</span> and served exclusively.</li>
+            <li>Our all-time favorite dishes are <span class="yellow">available 24/7.</span></li>
+        </ul></font>
+        <br>
+
+        <img id="image2" src="00_restaurent_09.jpg" alt="Loading..." height="300"><br>
+        <font face="Lucida Handwriting"><ul style="color:white; font-size:25px; margin:0px 0px 0px 20px">
+            <li><span class="yellow">Collaborating with farmers and fishermen since 2002</span> for fresh ingredients.</li>
+            <li>Our culinary values reflect traditions found in 90% of the world's grandmothers' kitchens.</li>
+            <li>We incorporate <span class="yellow">leading-edge culinary techniques and ingredients.</span></li>
+            <li><span class="yellow">Expertly matching food and wine</span>, sometimes with unexpected combinations.</li>
+            <li>Offering an austere experience, emphasizing purity of ingredients and extraordinary flavors.</li>
+        </ul></font>
+
+        <img id="image3" src="00_restaurent_06.jpg" alt="Loading..." height="250">
+        <font face="Lucida Handwriting"><ul style="color:white; font-size:25px; margin:60px 0px 0px 20px">
+            <li><span class="yellow">Wide range of products and services</span> to meet varied customer needs.</li>
+            <li>Courteous staff, prompt in providing assistance and answering queries.</li>
+            <li>Authentic taste from family recipes and fresh, simple ingredients.</li>
+            <li><span class="yellow">Dishes reflect India's diverse flavors</span> in a modern, fast-casual setting.</li>
+            <li><span class="yellow">Features an antique bar</span> offering French aperitifs, unique, and traditional cocktails.</li>
+        </ul></font>
+
+        <img id="image4" src="00_restaurent_05.jpg" alt="Loading..." height="300">
+        <p><font face="Lucida Handwriting">
+            <ul style="color:white; font-size:25px; margin:60px 0px 0px 20px">
+                <li>The Green Leaf Restaurant offers halls accommodating up to 50 seated guests and 70 floating guests.</li>
+                <li>Both <span class="yellow">vegetarian and non-vegetarian food</span> are served at this venue.</li>
+                <li>Packages start at <span class="yellow">₹1550 per plate for the vegetarian menu</span> and <span class="yellow">₹2450 for the non-veg menu.</span></li>
+                <li>For best price guarantee and hassle-free booking, <span class="yellow">call 76-66-77-88-99.</span></li>
+            </ul>
+        </font>
+    </div>    
+    <br><br>
+    <br><br>
+
+
+    <!-- menu button-->
+    <div id="food_order">
+        <center><button style="font-size:25px"><a href="3_main_menu.html"><font face="Lucida Handwriting">Check Out Our Menu !</font></a></button></center>
+    </div>
+    <br><br><hr width="35%"><br><br>
+    
+
+      <!-- Follow us on -->
+    
+      <center><b style="color: white; font-size: 35px;"><font face="Lucida Handwriting">Follow us on</font></b></center>
+      <br><br>
+      <div id="follow">
+          <a href="https://www.instagram.com/greenleafrestaurant" target="_blank"><img src="00_insta_19.png" alt="Loading..." height="45px"></a>
+          <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>@greenleafrestaurant</b></font></p> 
+          <a href="https://www.facebook.com/greenleafrestaurant" target="_blank"><img style="margin-left:5%;" src="00_facebook_20.webp" alt="Loading..." height="45px"></a>
+          <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>@greenleafrestaurant</b></font></p>
+          <a href="https://twitter.com/greenleaf092" target="_blank"><img style="margin-left:5%;" src="00_twitter_21.png" alt="Loading..." height="45px"></a>
+          <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>@greenleaf092</b></font></p>
+          <a href="https://www.youtube.com/channel/greenleafrestaurant" target="_blank"><img style="margin-left:5%;" src="00_youtube_22.png" alt="Loading..." height="45px"></a>
+          <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>Green Leaf Restaurant</b></font></p>
+      </div>
+  
+  <footer style="background-color: rgb(25, 55, 25); color: white; padding: 20px 0;">
+      <div style="text-align: center;">
+          <h3 style="font-family: 'Lucida Handwriting';">Connect with Us</h3>
+          <p style="margin: 5px 0;">For reservations and inquiries, call us at <b>76-66-77-88-99</b></p>
+          <p style="margin: 5px 0;">Email: <a href="mailto:info@greenleafrestaurant.com" style="color: gold;">info@greenleafrestaurant.com</a></p>
+  
+          <br><br>
+          
+          <div id="last" style="color: black;">
+          <p style="font-size: 14px;">&copy; 2022 The Green Leaf Company Pvt Ltd. All Rights Reserved.</p>
+          <p style="font-size: 14px;"><a href="1_home.html" style="color: darkgreen;">Home</a> | <a href="2_about_us.html" style="color: darkgreen;">About Us</a> | <a href="5_contact_us.html" style="color: darkgreen;">Order</a></p>
+          </div>
+      </div>
+  </footer>
+    
+        
+    
+   
+    <script>
+
+        function searchAndHighlight() {
+            var searchQuery = document.getElementById('search').value.trim();
+            
+            if (searchQuery === "") {
+                alert("Please enter a search term.");
+                return;
+            }
+    
+            // Remove existing highlights if any
+            removeHighlights();
+    
+            // Find the search term on the page
+            var bodyText = document.body.innerHTML;
+            var searchPattern = new RegExp('('+ searchQuery +')', 'gi');
+    
+            if (searchPattern.test(bodyText)) {
+                // Highlight the search term
+                document.body.innerHTML = bodyText.replace(searchPattern, '<span class="highlight">$1</span>');
+    
+                // Scroll to the first instance of the highlighted term
+                var firstHighlight = document.querySelector(".highlight");
+                if (firstHighlight) {
+                    firstHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    firstHighlight.style.color = "red";
+                }
+            } else {
+                alert("No matches found.");
+            }
+        }
+    
+        function removeHighlights() {
+            // Remove any existing highlights
+            var highlightedElements = document.querySelectorAll(".highlight");
+            highlightedElements.forEach(function(el) {
+                el.outerHTML = el.innerHTML; // remove the span tags
+            });
+        }
+
+const storedUser = JSON.parse(localStorage.getItem('user'));
+
+// If user data is found, display the username
+if (storedUser && storedUser.username) {
+    document.getElementById('userwelcome').textContent = "Welcome, " + storedUser.username;
+} else {
+    document.getElementById('userwelcome').textContent = 'Welcome, Guest!'; // If no user is logged in
+}
+    
+    </script>
+    
+</body>
+</html>

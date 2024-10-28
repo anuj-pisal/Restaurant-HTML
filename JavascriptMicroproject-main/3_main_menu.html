@@ -1,0 +1,581 @@
+<html>
+<head>
+    <title>The Green Leaf</title>
+    <link rel="shortcut icon" href="00_title_bar_image.png" type="image/x-icon">
+    <style>
+    #menu{
+            background-image: url("00_leaf_background.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            border: solid 3px white;
+    }
+
+    #back_button{
+        border: 2px solid grey;
+        color:darkgreen;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        font-size: 17px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+   
+
+    td, th, #table1{
+        padding:5px 5px;
+        border-radius:15px;
+        color:rgb(25, 55, 25) ;
+        border:2px solid rgb(25, 55, 25);
+        background-color:lightgray;
+        margin:20px
+    }
+
+    .table1{
+        table-layout: fixed;
+        width:95%;
+        
+    }
+
+    #food_order button{
+        border:3px solid white;
+        border-radius: 18px;
+        background-color:darkgreen ;
+    }
+
+    #food_order a{
+        text-decoration: none;
+        color:white;
+        padding: 10px 10px
+    }
+
+    #food_order a:hover{
+        color:crimson;
+    }
+
+    #follow{
+        display:flex;
+        justify-content: center;
+    }
+
+    #last{
+        background-color: rgb(199, 196, 196);
+        padding-top: 25px ;
+        padding-bottom: 25px;
+    }
+    
+    </style>
+</head>
+<body  style="background-color:rgb(25, 55, 25);">
+    <!-- Heading of a page -->
+    <div id="menu">
+        <button id="back_button"><a href="1_home.html" style="text-decoration: none;"><b>←</b></a></button>
+        <h1 style="font-size:60px;"><center><font face="Lucida Handwriting" color="white">Our Exotic Menu</font></center></h1>
+    </div>
+
+    <br><br><hr width="35%">
+    
+    <!-- Indian Menu-->
+    <h1 style="color:white"><center><font face="Lucida Handwriting">Indian Food</font></center></h1>
+    <hr width="35%"><br><br>
+
+    <font face="Lucida Handwriting">
+        <Table class="table1" Width="1200" Align="Center">
+            <tr align="center">
+                <th colspan="2">Main Course</th>
+            </tr>
+            <tr align="center">
+                
+                <th>Dishes</th>
+                <th>Prices</th>
+            </tr>
+            <tr align="center"> 
+                <td>Butter Chicken</td>
+                <td>₹2500</td>
+            </tr>
+            <tr align="center">
+                <td>Lamb Kebab</td>
+                <td>₹1500</td>
+            </tr>
+            <tr align="center">
+                <td>Chicken Tikka Masala</td>
+                <td>₹1200</td>
+            </tr>
+            <tr align="center">
+                <td>Goat Vindaloo</td>
+                <td>₹2300</td>
+            </tr>
+            <tr align="center">
+                <td>Bombay Duck Curry</td>
+                <td>₹2400</td>
+            </tr>
+            <tr align="center">
+                <td>Palak/Butter Masala/Mutter Masala/Tikka Paneer</td>
+                <td>₹2900</td>
+            </tr>    
+            <tr align="center">
+                <td>Dum Aloo Curry</td>
+                <td>₹1450</td>
+            </tr>
+            <tr align="center">
+                <td>Chickpea Masala</td>
+                <td>₹2200</td>
+            </tr>
+            <tr align="center">
+                <td>Spinach & Ricotta Gnocchi</td>
+                <td>₹2850</td>
+            </tr>
+            </Table>
+            <br><br>
+
+            <Table class="table1" Width="1200" Align="Center">
+            <tr align="center">
+                <th colspan="2">Rice</th>
+            </tr>
+            <tr align="center">
+                <td>Chicken Biryani</td>
+                <td>₹3100</td>
+            </tr>
+            <tr align="center">
+                <td>Bombay Duck Biryani</td>
+                <td>₹3540</td>
+            </tr>
+            <tr align="center">
+                <td>Hyderabadi Rice</td>
+                <td>₹2400</td>
+            </tr>
+            <tr align="center">
+                <td>Lemon & Tamarind Rice</td>
+                <td>₹2100</td>
+            </tr>
+            <tr align="center">
+                <td>Vegetable Pulao</td>
+                <td>₹1950</td>
+            </tr>
+            </Table>
+            <br><br>
+
+            <Table class="table1" Width="1200" Align="Center">
+            <tr align="center">
+                <th colspan="2">Breads</th>
+            </tr>
+            <tr align="center">
+                <td>Parotta</td>
+                <td>₹350</td>
+            </tr>
+            <tr align="center">
+                <td>Garlic/Butter Naan</td>
+                <td>₹450</td>
+            </tr>
+            <tr align="center">
+                <td>Punjabi Kulcha</td>
+                <td>₹230</td>
+            </tr>
+            <tr align="center">
+                <td>Malabar Parotta</td>
+                <td>₹430</td>
+            </tr>
+            <tr align="center">
+                <td>Poori</td>
+                <td>₹220</td>
+            </tr>            
+        </Table>
+        <br><br>
+        
+        <Table class="table1" Width="1200" Align="Center">
+            <tr align="center">
+                <th colspan="2">Desserts</th>
+            </tr>
+            <tr align="center">
+                <th>Dishes</th>
+                <th>Prices</th>
+            </tr>
+            <tr align="center">
+                <td>Gulab Jamun(4 Pieces)</td>
+                <td>₹450</td>
+            </tr>
+            <tr align="center">
+                <td>Rus Gulla(4 Pieces)</td>
+                <td>₹450</td>
+            </tr>
+            <tr align="center">
+                <td>Moong Halwa</td>
+                <td>₹950</td>
+            </tr>
+            <tr align="center">
+                <td>Carrot Pudding</td>
+                <td>₹1100</td>
+            </tr>
+            <tr align="center">
+                <td>Ras Malai</td>
+                <td>₹970</td>
+            </tr>
+            <tr align="center">
+                <td>Kheer</td>
+                <td>₹1400</td>
+            </tr>
+            <tr align="center">
+                <td>Kulfi/Ice Creams</td>
+                <td>₹780</td>
+            </tr>
+        </table>
+    </font>
+    <div id="fooditem1">
+        <img src="00_butter_chicken_28.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 120px; border:2px solid white; border-radius: 50%;">
+        <img src="00_chicken_biryani_30.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+        <img src="00_tikka_panner.jpeg" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+        <img src="00_rasgulla_31.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+    </div>
+    <br><br><br><hr width="35%">
+
+    <!--Continental Menu-->
+    <h1 style="color:white"><center><font face="Lucida Handwriting" color="white">Continental Food</font></center></h1>
+    <hr width="35%"><br><br>
+
+    <font face="Lucida Handwriting">
+    <Table class="table1" Width="1200" Align="Center">
+        <tr align="center">
+            <th colspan="2">Main Course</th>
+        </tr>
+        <tr align="center">
+            
+            <th>Dishes</th>
+            <th>Prices</th>
+        </tr>
+        <tr align="center"> 
+            <td>Bruschetta Asparagus</td>
+            <td>₹1800</td>
+        </tr>
+        <tr align="center">
+            <td>Potato Au Gratin</td>
+            <td>₹2500</td>
+        </tr>
+        <tr align="center">
+            <td>Pesto Pasta Salad</td>
+            <td>₹2130</td>
+        </tr>
+        <tr align="center">
+            <td>Osso Bucco</td>
+            <td>₹3650</td>
+        </tr>
+        <tr align="center">
+            <td>Filet Mignon</td>
+            <td>₹5400</td>
+        </tr>        
+    </Table>
+    <br><br>
+    <Table class="table1" Width="1200" Align="Center">
+        <tr align="center">
+            <th colspan="2">Appetizers</th>
+        </tr>
+        <tr align="center">
+            
+            <th>Dishes</th>
+            <th>Prices</th>
+        </tr>
+        <tr align="center"> 
+            <td>Bruschetta</td>
+            <td>₹1400</td>
+        </tr>
+        <tr align="center">
+            <td>Artichoke Salad</td>
+            <td>₹2450</td>
+        </tr>
+        <tr align="center">
+            <td>Stuffed Mushrooms</td>
+            <td>₹2300</td>
+        </tr>
+        <tr align="center">
+            <td>Clalamari</td>
+            <td>₹2500</td>
+        </tr>
+        <tr align="center">
+            <td>Shrimp Scampi</td>
+            <td>₹5001</td>
+        </tr>
+    </Table>
+    <br><br>
+    <Table class="table1" Width="1200" Align="Center">
+        <tr align="center">
+            <th colspan="2">Desserts</th>
+        </tr>
+        <tr align="center">
+            
+            <th>Dishes</th>
+            <th>Prices</th>
+        </tr>
+        <tr align="center"> 
+            <td>Spilt Banana</td>
+            <td>₹1299</td>
+        </tr>
+        <tr align="center">
+            <td>Macarones</td>
+            <td>₹1800</td>
+        </tr>
+        <tr align="center">
+            <td>Affogoto Coffee Cream</td>
+            <td>₹2300</td>
+        </tr>
+        <tr align="center">
+            <td>Creme Brule</td>
+            <td>₹1950</td>
+        </tr>
+        <tr align="center">
+            <td>Tiramisu</td>
+            <td>₹2500</td>
+        </tr>
+    </Table>
+    </font>
+
+    <div id="fooditem2">
+        <img src="00_asparagus_31.jpeg" alt="Loading..." height="225px" style="margin:55px 20px 0px 120px; border:2px solid white; border-radius: 50%;">
+        <img src="00_salad_32.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+        <img src="00_shrimp_33.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+        <img src="00_coffee_cream_34.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+    </div>
+    <br><br><br><hr width="35%">
+
+    <!-- Italian Menu -->
+    <h1 style="color:white"><center><font face="Lucida Handwriting" color="white">Italian Food</font></center></h1>
+    <hr width="35%"><br><br>
+
+    <font face="Lucida Handwriting">
+        <Table class="table1" Width="1200" Align="Center">
+            <tr align="center">
+                <th colspan="2">Main Course</th>
+            </tr>
+            <tr>
+                <th>Dishes</th>
+                <th>Prices</th>
+            </tr>
+            <tr align="center">
+                <td>Sundried Tomato and Arugala</td>
+                <td>₹2500</td>
+            </tr>
+            <tr align="center">
+                <td>Margherita</td>
+                <td>₹1950</td>
+            </tr>
+            <tr align="center">
+                <td>Capricoissa</td>
+                <td>₹2960</td>
+            </tr>
+            <tr align="center">
+                <td>Napolettana</td>
+                <td>₹2600</td>
+            </tr>
+            <tr align="center">
+                <td>Prochuistto De Parma</td>
+                <td>₹2450</td>
+            </tr>
+            </Table>
+            <br><br>
+    
+            <Table class="table1" Width="1200" Align="Center">
+            <tr align="center">
+                <th colspan="2">Pastas</th>
+            </tr>
+            <tr align="center">
+                <td>Prochuistto De Parma</td>
+                <td>₹3100</td>
+            </tr>
+            <tr align="center">
+                <td>Trofie Al Pesto</td>
+                <td>₹3200</td>
+            </tr>
+            <tr align="center">
+                <td>Prochuistto Parm</td>
+                <td>₹2850</td>
+            </tr>
+            <tr align="center">
+                <td>Spagetti alio e olio</td>
+                <td>₹2400</td>
+            </tr>
+            <tr align="center">
+                <td>Lasangna Bolgnese</td>
+                <td>₹3600</td>
+            </Table>
+            <br><br>
+
+            <Table class="table1" Width="1200" Align="Center">
+                <tr align="center">
+                <th colspan="2">Desserts</th>
+            </tr>
+            <tr align="center">
+    
+                <th>Dishes</th>
+                <th>Prices</th>
+            </tr>
+            <tr align="center">
+                <td>Cannolini Vanilla</td>
+                <td>₹750</td>
+            </tr>
+            <tr align="center">
+                <td>Coffee Affogato</td>
+                <td>₹1120</td>
+            </tr>
+            <tr align="center">
+                <td>Gelato</td>
+                <td>₹450</td>
+            </tr>
+            <tr align="center">
+                <td>Hyacinth Cake</td>
+                <td>₹1600</td>
+            </tr>
+            <tr align="center">
+                <td>Pan Au Chocolate</td>
+                <td>₹800</td>
+            </tr>
+        </Table>
+        </font>
+    
+        <div id="fooditem3">
+            <img src="00_napolettana_35.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 120px; border:2px solid white; border-radius: 50%;">
+            <img src="00_pasta1_36.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+            <img src="00_pasta2_37.png" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+            <img src="00_pan_au_choco_38.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+        </div>
+    <br><br><br><hr width="35%">
+
+    <!-- Bevrages -->
+    <h1 style="color:white"><center><font face="Lucida Handwriting" color="white">Beverages</font></center></h1>
+    <hr width="35%"><br><br>
+    
+    <font face="Lucida Handwriting">
+        <Table class="table1" Width="1200" Align="Center">
+            <tr align="center">
+                <th colspan="2">Beverages</th>
+            </tr>
+            <tr align="center">
+                
+                <th>Dishes</th>
+                <th>Prices</th>
+            </tr>
+            <tr align="center"> 
+                <td>Coffee Machiatto</td>
+                <td>₹750</td>
+            </tr>
+            <tr align="center">
+                <td>Apple Cider</td>
+                <td>₹710</td>
+            </tr>
+            <tr align="center">
+                <td>Bubble Milk Tea</td>
+                <td>₹1200</td>
+            </tr>
+            <tr align="center">
+                <td>Indian Spice Tea</td>
+                <td>₹350</td>
+            </tr>
+            <tr align="center">
+                <td>Sargria</td>
+                <td>₹1300</td>
+            </tr>
+            <tr align="center">
+                <td>Margarita (Ginger)</td>
+                <td>₹1320</td>
+            </tr>
+            <tr align="center">
+                <td>South Indian Filter Coffee</td>
+                <td>₹350</td>
+            </tr>
+        </Table>
+        <br><br>
+        <Table class="table1" Width="1200" Align="Center">
+            <tr align="center">
+                <th colspan="2">Cocktails & Drinks</th>
+            </tr>
+            <tr align="center">
+                
+                <th>Dishes</th>
+                <th>Prices</th>
+            </tr>
+            <tr align="center"> 
+                <td>Long Island Iced Tea</td>
+                <td>₹1800</td>
+            </tr>
+            <tr align="center">
+                <td>Old Fashioned</td>
+                <td>₹1650</td>
+            </tr>
+            <tr align="center">
+                <td>Cosmopolital</td>
+                <td>₹1450</td>
+            </tr>
+            <tr align="center">
+                <td>Irish Coffee</td>
+                <td>₹1340</td>
+            </tr>
+            <tr align="center">
+                <td>Amarretto</td>
+                <td>₹1500</td>
+            </tr>
+            <tr align="center">
+                <td>Moscow Mule</td>
+                <td>₹2300</td>
+            </tr>
+            <tr align="center">
+                <td>Aperol Spritz</td>
+                <td>₹1740</td>
+            </tr>
+            <tr align="center">
+                <td>Negroni</td>
+                <td>₹1090</td>
+            </tr>
+            <tr align="center">
+                <td>Manhattan</td>
+                <td>₹2850</td>
+            </tr>
+            <tr align="center">
+                <td>Da Quirri</td>
+                <td>₹1200</td>
+            </tr>
+            <tr align="center">
+                <td>Pina Colada</td>
+                <td>₹1740</td>
+            </tr>
+            <tr align="center">
+                <td>Mimosa</td>
+                <td>₹1400</td>
+            </tr>
+        </Table>
+        </font>
+            
+        <div id="fooditem4">
+            <img src="00_bevarage1_39.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 120px; border:2px solid white; border-radius: 50%;">
+            <img src="00_bevarage2_40.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+            <img src="00_drink1_41.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+            <img src="00_drink2_42.jpg" alt="Loading..." height="225px" style="margin:55px 20px 0px 80px; border:2px solid white; border-radius: 50%">
+        </div>
+        <br><br><br><br>
+
+        <!-- menu button-->
+        <div id="food_order">
+            <center><button style="font-size:25px"><a href="5_contact_us.html"><font face="Lucida Handwriting">Order Food Now!</font></a></button></center>
+        </div>
+        <br><br><hr width="25%"><br><br><br>
+
+        <!-- Follow us on -->
+    
+        <center><b style="color: white; font-size: 35px;"><font face="Lucida Handwriting">Follow us on</font></b></center>
+        <br><br>
+        <div id="follow">
+            <img src="00_insta_19.png" alt="Loading..." height="45px">
+            <p style="margin-left:10px"><font face="Lucida Handwriting" color="white"><b>@greenleafrestaurant</b></font></p> 
+            <img style="margin-left:5%;" src="00_facebook_20.webp" alt="Loading..." height="45px">
+            <p style="margin-left:10px"><font face="Lucida Handwriting" color="white"><b>@greenleafrestaurant</b></font></p>
+            <img style="margin-left:5%;" src="00_twitter_21.png" alt="Loading..." height="45px">
+            <p style="margin-left:10px"><font face="Lucida Handwriting" color="white"><b>@greenleaf092</b></font></p>
+            <img style="margin-left:5%;" src="00_youtube_22.png" alt="Loading..." height="45px">
+            <p style="margin-left:10px"><font face="Lucida Handwriting" color="white"><b>Green Leaf Restaurant</b></font></p>
+        </div>
+        <br><br>
+
+        <!-- Final box -->
+        <div id="last">
+            <p><font face="arial"><center><b>Copyright @ 2022 Company Pvt Ltd</b></center></font></p>
+        </div>
+</body>
+</html>

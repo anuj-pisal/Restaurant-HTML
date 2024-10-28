@@ -1,0 +1,414 @@
+<html>
+
+<head>
+    <link rel="shortcut icon" href="00_title_bar_image.png" type="image/x-icon">
+    <title>The Green Leaf</title>
+    <style>
+        #homehead {
+            background-image: url("00_leaf_background.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            border: solid 3px white;
+            margin-top: 35px;
+        }
+
+        .navbar {
+            background-color: white;
+            border-radius: 30px;
+            margin-top: 15px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 30px;
+            padding-top: 5px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: rgb(11, 106, 11);
+        }
+
+        .navbar li a:hover {
+            color: lawngreen;
+        }
+
+        .navbar input {
+            border: solid 2px darkgreen;
+            border-radius: 14px;
+            padding: 15px 15px;
+            width: 240px;
+            height: 31px;
+        }
+
+        .searchbox {
+            float: right;
+            padding: 12px 50px;
+        }
+
+        #founder,
+        #chef,
+        #speciality,
+        #reviews {
+            color: white;
+        }
+
+        #image1 {
+            float: left;
+            border: 2px solid white;
+            margin: 20px 50px 20px 20px;
+        }
+
+        #image2 {
+            float: left;
+            border: 2px solid white;
+            margin: 0px 50px 15px 20px;
+        }
+
+        #image3 {
+            float: left;
+            border: 2px solid white;
+            margin: 35px 30px 15px 20px;
+        }
+
+        #image4 {
+            float: right;
+            border: 2px solid white;
+            margin: 35px 20px 15px 30px;
+        }
+
+        #image5 {
+            float: left;
+            border: 2px solid white;
+            margin: 30px 30px 15px 20px;
+        }
+
+        #image6,
+        #image7,
+        #image8,
+        #image9,
+        #image10,
+        #image11 {
+            float: left;
+            border: 2px solid white;
+            margin: 35px 30px 15px 30px;
+        }
+
+        #follow {
+            display: flex;
+            justify-content: center;
+        }
+
+        #last {
+            background-color: rgb(199, 196, 196);
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        #search-icon {
+            width: 30px;
+            margin: -10px;
+            padding-left: 18px;
+            padding-top: 9px;
+            border-radius: 50%;
+        }
+        
+        #search-icon:hover {
+            width: 32px;
+        }
+
+        .yellow {
+            color: gold;
+        }
+
+    </style>
+</head>
+
+<body style="background-color:rgb(25, 55, 25);">
+    <nav class="navbar">
+        <ul>
+            <li><a href="1_home.html">Home</a></li>
+            <li><a href="2_about_us.html">About us</a></li>
+            <li><a href="4_branches.html">Branches</a></li>
+            <li><a href="5_contact_us.html">Order Food</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="6_log_in.html">Log In</a></li>
+            <li id="userwelcome">Welcome, </li>
+            <div class="searchbox">
+                <input type="search" name="searchbox" id="search" placeholder="Search this website">
+                <img src="search.png" alt="Loading.." id="search-icon" onclick="searchAndHighlight()">
+            </div>
+
+        </ul>
+    </nav>
+
+    <div id="homehead">
+        <p>&nbsp;</p>
+        <h1 style="font-size:100px;">
+            <center>
+                <font face="Lucida Handwriting" color="white">The Green Leaf</font>
+            </center>
+        </h1>
+        <h3 style="font-size:35px;">
+            <center>
+                <font face="Lucida Handwriting" color="white">• Indian &nbsp;• Italian &nbsp;• Continental</font>
+            </center>
+        </h3>
+        <p>&nbsp;</p>
+    </div>
+
+    <div id="founder">
+        <br>
+        <hr width="45%">
+        <h1>
+            <center>
+                <font face="Lucida Handwriting">Our Founder - <b style="color:crimson">Mr.Raju Kumar</b></font>
+            </center>
+        </h1>
+        <hr width="45%">
+
+        <img id="image1" src="00_founder_10.jpg" alt="Loading" height="250px">
+            <font face="Lucida Handwriting"><ul style="font-size:25px; margin:30px 30px 0px 20px">
+                <li>The Green Leaf is a chain of luxury restaurants and a subsidiary of The Green Leaf Company Limited, <span class="yellow">headquartered in Mumbai</span>, India.</li>
+                <li><span class="yellow">Founded by Raju Kumar in January 2001</span>, the company is part of The Green Leaf Group, one of India's largest catering conglomerates.</li>
+                <li>In 2022, the company employed over 200 people and <span class="yellow">operates over 15 restaurants and hotel-resorts</span>, with <span class="yellow">84 locations</span> in Maharashtra and 6 in other states like Bengal, Delhi, Chennai, and Bangalore.</li>
+                <li><span class="yellow">Raju Kumar opened the first Green Leaf hotel and restaurant in Mumbai (Bandra) on 2nd January 2022</span>, overlooking the Arabian Sea.</li>
+                <li>Anecdotal stories suggest the hotel was opened after Raju Kumar was refused entry to the Watson Hotel in Mumbai due to past business failures, leading him to accept a challenge from a friend and business partner.</li>
+            </ul></font>
+    </div>
+    <br><br>
+
+    <div id="chef">
+        <hr width="45%">
+        <h1>
+            <center>
+                <font face="Lucida Handwriting">Our Head chef - <b style="color:crimson">Mr.Sanjeev Kapoor</b></font>
+            </center>
+        </h1>
+        <hr width="45%" style="margin-bottom:30px;">
+
+        <a href="https://www.sanjeevkapoor.com/"><img id="image2" src="00_headchef_11.jpg" alt="Loading"
+                height="250px"></a>
+        <p>
+            <font face="Lucida Handwriting"><ul style="font-size:25px; margin:0px 20px 0px 20px">
+                <li><span class="yellow">Chef Sanjeev Kapoor is the head chef of The Green Leaf</span>, which has 16 restaurants in India.</li>
+                <li><span class="yellow">At 55 years old, he is a renowned chef, entrepreneur, and TV personality</span>, famous for his popular cookery.</li>
+                <li><span class="yellow">He joined The Green Leaf Group in February 2022</span>, becoming India's first chef to lead a 16-restaurant chain.</li>
+                <li>Recognized in Reader's Digest as <span class="yellow">one of 100 of India's Most Trusted People.</span></li>
+                <li>Known for developing the indulgent Indian menu featuring lamb kebabs and signature gravies as specialties.</li>
+                <li>Played a key role in developing the Continental and Italian menus, making him an integral part of the restaurant chain.</li>
+            </ul></font>
+        </p>
+    </div>
+    <br><br>
+
+    <div id="speciality">
+        <hr width="45%">
+        <h1>
+            <center>
+                <font face="Lucida Handwriting">Our Specialities</font>
+            </center>
+        </h1>
+        <hr width="45%">
+
+        <img id="image3" src="00_lamb_kebabs_12.jpg" alt="Loading" height="250px">
+        <p style="font-size:25px; margin:35px 30px 0px 20px">
+            <font face="Lucida Handwriting">• <b style="color:crimson">Lamb Kebabs</b> -<br>The Doner Kebab is also
+                called a lambkebab. Many believe that this brown coloured, spit-roasted, thinly sliced meat, is
+                primarily made from processed lamb meat with some seasoning. However, the meat used for making doner
+                kebab meat may be lamb,veal or mutton but not pork. The lamb Kebabs are the most indlgent and flavourful
+                of our dishes since the restaurant opened in February, it has remained the the second most ordered item
+                on our menu after our Italian cuisine.</font>
+        </p>
+
+        <img id="image4" src="00_pizza_13.webp" alt="Loading" height="325px">
+        <p style="font-size:25px; margin:20px 30px 20px 20px">
+            <font face="Lucida Handwriting">• <b style="color:crimson">Sundried Tomato and Arugula Pizza</b>
+                -<br>Peppery greens tossed in lemon juice are a fresh final topping for this sun dried tomato arugula
+                pizza. Those peppery leaves quite take this arugula pizza with sun dried tomatoes into full taste They
+                just layer in another something to the usual pizza components including crust, tomatoes and cheese. The
+                pizza is tossed in olive oil and grilled to perfection in a wood fire oven which is rarely used in
+                India. The simplest way to get quality crust is with the heat of the grill. Putting the dough right on
+                the grates gives grill marks and that nice smoky flavor.All these factors have made this decadent
+                Italian dish into the most ordered food item in our restaurant chain.</font>
+        </p>
+
+        <img id="image5" src="00_osso_buco.jpg" alt="Loading" height="300px">
+        <p style="font-size:25px; margin:35px 30px 0px 20px">
+            <font face="Lucida Handwriting">• <b style="color:crimson">Osso Bucco</b> -<br>Ossobuco or osso buco is a
+                specialty of Lombard cuisine of cross-cut veal shanks braised with vegetables, white wine and broth. It
+                is often garnished with gremolata and traditionally served with either risotto alla milanese or polenta,
+                depending on the regional variation. The marrow in the hole in the bone, a prized delicacy, is the
+                defining feature of the dish. The two types of ossobuco are a modern version that has tomatoes and the
+                original version which does not. The older version, ossobuco in bianco, is flavoured with cinnamon, bay
+                leaf, and gremolata. The modern and more popular recipe includes tomatoes, carrots, celery and onions;
+                gremolata is optional.</font>
+        </p>
+    </div>
+    <br><br>
+
+    <div id="reviews">
+        <hr width="45%">
+        <h1>
+            <center>
+                <font face="Lucida Handwriting">Customer Reviews</font>
+            </center>
+        </h1>
+        <hr width="45%">
+
+        <img id="image6" src="00_alison_brie_14.webp" alt="Loading" height="250px">
+        <p style=" margin:150px 100px 140px 300px">
+            <font face="Lucida Handwriting"><q>Their brunch is awesome; I love the bruschetta toast and the California
+                    focaccia. Pizza is really good as well.</q>
+                <b style="color:crimson; margin-left: 700px;">
+                    <font face="Lucida Handwriting">- Alison B.(Actress/entrepreneur)
+                </b></font>
+        </p>
+
+        <img id="image7" src="00_ronnie_e_15.jpg" alt="Loading" height="250px" width="180px">
+        <br>
+        <p style=" margin:120px 100px 120px 300px">
+            <font face="Lucida Handwriting"><q>Breakfast was delicious. Like a good homestyle country savoury breakfast
+                    (and I'm from the south, that's saying a lot)… Enjoyed the whole experience and definitely recommend
+                    this place for a place to eat on the cape.</q>
+                <b style="color:crimson; margin-left: 700px;">
+                    <font face="Lucida Handwriting">- Ronnie E.(Menu i/c The Capetown hotel)
+                </b></font>
+        </p>
+
+        <img id="image8" src="00_rick_H_16.jpeg" alt="Loading" height="250px" width="180px">
+        <br>
+        <p style=" margin:120px 100px 140px 300px">
+            <font face="Lucida Handwriting"><q>The absolute best dishes. Weather on Pizza or Pasta, it's honestly
+                    delicious. Portions are huge and the staff is extremely friendly and courteous.</q>
+                <b style="color:crimson; margin-left: 500px;">
+                    <font face="Lucida Handwriting">- Rick H.(Food Critic at Yale,California)
+                </b></font>
+        </p>
+
+        <img id="image9" src="00_martha_d_17.jpg" alt="Loading" height="250px" width="180px">
+        <br>
+        <p style=" margin:100px 100px 120px 300px">
+            <font face="Lucida Handwriting"><q>I go to breakfast or lunch weekly with a group of older women. In
+                    addition to the really good food, I must say that our waitress today was so kind and patient, as the
+                    group tried to decide what they wanted and were talking non-stop. My husband and I love dinner there
+                    as well. We are so fortunate to have this outstanding restaurant in our town. It's a gem.</q>
+                <b style="color:crimson; margin-left: 600px;">
+                    <font face="Lucida Handwriting">- Martha D.(Food Critic at Bombay Central)
+                </b></font>
+        </p>
+
+        <img id="image10" src="00_bill_m_18.jpg" alt="Loading" height="250px" width="180px">
+        <p style=" margin:220px 100px 120px 300px">
+            <font face="Lucida Handwriting"><q>Amazing! A must! This casual dining restaurant has something for
+                    everyone! I had the mushroom risotto with scallops: the dish was to die for! It was a generous
+                    portion, served piping hot, creamy and with large scallops. Our wonderful server, Jess, brought us
+                    dinner rolls to eat while we waited for our meal. Don't say I didn't warn you, the rolls are doughy
+                    warm goodness; save room for dinner! Thanks for a wonderful meal! </q>
+                <b style="color:crimson; margin-left: 700px;">
+                    <font face="Lucida Handwriting">- Bill M.(Head Chef at Cordelia Cruises)
+                </b></font>
+        </p>
+
+        <img id="image11" src="00_stancy_f_19.jpg" alt="Loading" height="250px" width="180px">
+        <p style=" margin:240px 100px 120px 300px">
+            <font face="Lucida Handwriting"><q>Coffee was fresh, the drinks are amazing and homemade, even the toast was
+                    good! Oh, and the Kebabs! Everything we ordered was fresh and delicious. Highly recommend!
+                    Definitely coming back.</q>
+                <b style="color:crimson; margin-left: 550px;">
+                    <font face="Lucida Handwriting">- Stacy F(Hollywood Celebrity and owner of THE FOOD CO.)
+                </b></font>
+        </p>
+    </div>
+    <br><br>
+    <hr width="25%"><br>
+    <!-- Follow us on -->
+    
+    <center><b style="color: white; font-size: 35px;"><font face="Lucida Handwriting">Follow us on</font></b></center>
+    <br><br>
+    <div id="follow">
+        <a href="https://www.instagram.com/greenleafrestaurant" target="_blank"><img src="00_insta_19.png" alt="Loading..." height="45px"></a>
+        <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>@greenleafrestaurant</b></font></p> 
+        <a href="https://www.facebook.com/greenleafrestaurant" target="_blank"><img style="margin-left:5%;" src="00_facebook_20.webp" alt="Loading..." height="45px"></a>
+        <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>@greenleafrestaurant</b></font></p>
+        <a href="https://twitter.com/greenleaf092" target="_blank"><img style="margin-left:5%;" src="00_twitter_21.png" alt="Loading..." height="45px"></a>
+        <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>@greenleaf092</b></font></p>
+        <a href="https://www.youtube.com/channel/greenleafrestaurant" target="_blank"><img style="margin-left:5%;" src="00_youtube_22.png" alt="Loading..." height="45px"></a>
+        <p style="margin-left:10px; margin-right: 25px;"><font face="Lucida Handwriting" color="white"><b>Green Leaf Restaurant</b></font></p>
+    </div>
+
+<footer style="background-color: rgb(25, 55, 25); color: white; padding: 20px 0;">
+    <div style="text-align: center;">
+        <h3 style="font-family: 'Lucida Handwriting';">Connect with Us</h3>
+        <p style="margin: 5px 0;">For reservations and inquiries, call us at <b>76-66-77-88-99</b></p>
+        <p style="margin: 5px 0;">Email: <a href="mailto:info@greenleafrestaurant.com" style="color: gold;">info@greenleafrestaurant.com</a></p>
+
+        <br><br>
+        
+        <div id="last" style="color: black;">
+        <p style="font-size: 14px;">&copy; 2022 The Green Leaf Company Pvt Ltd. All Rights Reserved.</p>
+        <p style="font-size: 14px;"><a href="1_home.html" style="color: darkgreen;">Home</a> | <a href="2_about_us.html" style="color: darkgreen;">About Us</a> | <a href="5_contact_us.html" style="color: darkgreen;">Order</a></p>
+        </div>
+    </div>
+</footer>
+    <script>
+
+        function searchAndHighlight() {
+            var searchQuery = document.getElementById('search').value.trim();
+            
+            if (searchQuery === "") {
+                alert("Please enter a search term.");
+                return;
+            }
+    
+            // Remove existing highlights if any
+            removeHighlights();
+    
+            // Find the search term on the page
+            var bodyText = document.body.innerHTML;
+            var searchPattern = new RegExp('('+ searchQuery +')', 'gi');
+    
+            if (searchPattern.test(bodyText)) {
+                // Highlight the search term
+                document.body.innerHTML = bodyText.replace(searchPattern, '<span class="highlight">$1</span>');
+    
+                // Scroll to the first instance of the highlighted term
+                var firstHighlight = document.querySelector(".highlight");
+                if (firstHighlight) {
+                    firstHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    firstHighlight.style.color = "red";
+                }
+            } else {
+                alert("No matches found.");
+            }
+        }
+    
+        function removeHighlights() {
+            // Remove any existing highlights
+            var highlightedElements = document.querySelectorAll(".highlight");
+            highlightedElements.forEach(function(el) {
+                el.outerHTML = el.innerHTML; // remove the span tags
+            });
+        }
+
+        
+const storedUser = JSON.parse(localStorage.getItem('user'));
+
+// If user data is found, display the username
+if (storedUser && storedUser.username) {
+    document.getElementById('userwelcome').textContent = "Welcome, " + storedUser.username;
+} else {
+    document.getElementById('userwelcome').textContent = 'Welcome, Guest!'; // If no user is logged in
+}
+      
+
+    </script>
+</body>
+
+</html>

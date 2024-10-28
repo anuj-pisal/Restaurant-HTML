@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+   <link rel="stylesheet" href="signup.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="signup-container">
+        <div class="signup-box">
+            <!-- title for form -->
+            <h2>Signup</h2>
+            <form id="signupForm" action="#">
+
+                <!-- input field for username -->
+                <div class="input_box">
+                    <input type="text" id="username" required>
+                    <label for="username">Username</label>
+                </div>
+
+                <!-- input field for email -->
+                <div class="input_box">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                    
+                </div>
+
+                <!-- input field for password with checkbox -->
+                <div class="input_box">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+
+                <!-- input field for confirm password -->
+                <div class="input_box">
+                    <input type="password" id="confirmPassword" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                </div>
+
+                <div class="password_checkbox">
+                    <input type="checkbox" id="showPassword">
+                    <p>Show Password</p>
+                </div>
+
+                <!-- Submit button for signup form -->
+                <button class="signup_button" type="submit">Create Account</button>
+
+                <!-- Link for existing users -->
+                <div class="login_link">
+                    <a href="login.html">Already have an account?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        // Move label up when input is focused or has value, otherwise reset it
+        document.querySelectorAll('.input_box input').forEach(input => {
+            // Add focus event to move label up
+            input.addEventListener('focus', () => {
+                input.nextElementSibling.classList.add('active'); // move label up
+            });
+
+            // Add blur event to move label down only if the input is empty
+            input.addEventListener('blur', () => {
+                if (input.value === '') {
+                    input.nextElementSibling.classList.remove('active'); // move label down
+                }
+            });
+        });
+
+        // Show/Hide password functionality
+        const passwordField = document.getElementById('password');
+        const confirmPasswordField = document.getElementById('confirmPassword');
+        const showPasswordCheckbox = document.getElementById('showPassword');
+
+        showPasswordCheckbox.addEventListener('click', () => {
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                confirmPasswordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+                confirmPasswordField.type = 'password';
+            }
+        });
+
+        
+        const signupForm = document.getElementById('signupForm');
+
+        signupForm.addEventListener('submit', function(e) {
+            const username = document.getElementById('username').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = passwordField.value;
+            const confirmPassword = confirmPasswordField.value;
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            // Validate username
+            if (username.length < 5) {
+                e.preventDefault();
+                alert("Username must be at least 5 characters long.");
+            }
+            else if (password.length < 6) {
+                e.preventDefault();
+                alert("Password must be at least 6 chracters long.");
+            }
+            else if(!emailPattern.test(email)) {
+                e.preventDefault();
+                alert("Please enter a valid email address.");
+            }
+            else if (password !== confirmPassword) {
+                e.preventDefault();
+                alert("Passwords do not match. Please try again.");
+            }
+            else {
+                const userDetails = { username, email, password }; 
+                localStorage.setItem('user', JSON.stringify(userDetails));
+    
+                alert("User signed up successfully");
+                setTimeout(() => {
+                    window.location.href = '6_log_in.html'; 
+                }, 2000);
+            }
+        });
+        
+    </script>
+
+</body>
+</html>

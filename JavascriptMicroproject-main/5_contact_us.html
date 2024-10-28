@@ -1,0 +1,422 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="00_title_bar_image.png" type="image/x-icon">
+    <title>The Green Leaf</title>
+    <style>
+         #homehead{
+            background-image: url("00_leaf_background.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            border: solid 3px white;
+        }
+
+        .navbar{
+            background-color:white;
+            border-radius: 30px;
+            margin-top: 15px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .navbar li{
+            float:left;
+            list-style: none;  
+            margin: 13px 30px;
+            padding-top: 5px;
+        }
+
+        .navbar li a{
+            padding: 3px 3px;  
+            text-decoration: none;
+            color:rgb(11, 106, 11);
+        }
+
+        .navbar li a:hover{
+            color:lawngreen;
+        }
+
+        .navbar input{
+            border:solid 2px darkgreen;
+            border-radius: 14px;
+            padding: 15px 15px;
+            width: 240px;
+            height: 31px;
+        }
+
+        .searchbox{
+            float:right;
+            padding:12px 50px;
+        }
+
+        #follow{
+        display:flex;
+        justify-content: center;
+        }
+
+        #last{
+            background-color: rgb(199, 196, 196);
+            padding-top: 25px ;
+            padding-bottom: 25px;
+        }
+        
+        #search-icon {
+            width: 30px;
+            margin: -10px;
+            padding-left: 18px;
+            padding-top: 9px;
+            border-radius: 50%;
+        }
+        
+        #search-icon:hover {
+            width: 32px;
+        }
+
+        input[type="button"]:hover {
+        background-color: darkgreen !important; 
+        color: white !important;
+        border-color: white !important;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(25, 55, 25)">
+     <!-- navigation bar -->
+     <nav class="navbar">
+        <ul>
+            <li><a href="1_home.html">Home</a></li>  
+            <li><a href="2_about_us.html">About us</a></li>
+            <li><a href="4_branches.html">Branches</a></li>
+            <li><a href="5_contact_us.html">Order Food</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="6_log_in.html">Log In</a></li>
+            <li id="userwelcome">Welcome, </li>
+            <div class="searchbox">
+            <input type="search" name="searchbox" id="search" placeholder="Search this website">
+            <img src="search.png" alt="Loading.." id="search-icon" onclick="searchAndHighlight()">
+            </div>
+            
+        </ul>
+    </nav>
+    `<br>
+
+    <!-- heading of home -->
+    <div id="homehead">
+        <p>&nbsp;</p>
+        <h1 style="font-size:100px;"><center><font face="Lucida Handwriting" color="white">The Green Leaf</font></center></h1>
+        <h3 style="font-size:35px;"><center><font face="Lucida Handwriting" color="white">• Indian &nbsp;• Italian &nbsp;• Continental</font></center></h3>
+        <p>&nbsp;</p>
+    </div>
+    <br><br>
+
+    <!-- Form -->
+
+    <div>
+    <form action="#" method="get" >
+        <font face="Lucida Handwriting">
+        <fieldset style="margin-left:70px; margin-right:70px; background-color:lavender; color:rgb(25, 55, 25); border:4px double rgb(25, 55, 25); border-radius: 40px;">
+            <h1 align="center" style="border-bottom:4px double rgb(25, 55, 25); padding-bottom: 16px;">Feeling hungry ? Order now !</h1>
+            <center>    
+            <label for="name">Enter your name&nbsp; : &nbsp;</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" style="margin:0px -84px 0px 0px ">
+            <br><br>
+            
+            <label for="contact">Enter your contact number&nbsp; : &nbsp;</label>
+            <input type="t" name="contact" id="contact" placeholder="Enter contact number" style="margin:0px 15px 0px 0px">
+            <br><br>
+
+            <label for="email">Enter your E-mail&nbsp; : &nbsp;</label>
+            <input type="email" name="email" id="email" placeholder="Enter email" style="margin:0px -66px 0px 0px">
+            <br><br>
+
+            <label for="address">Enter your address&nbsp; : &nbsp;</label>
+            <input type="text" name="address" id="address" placeholder="Enter address" style="margin:0px -56px 0px 0px">
+            <br><br>
+
+            <label for="dishes">&nbsp;&nbsp;Select dishes&nbsp; : &nbsp;</label>
+            <b>• Indian</b>
+            <br>
+            &nbsp;
+            <input type="checkbox" class="foodItem" name="d1" id="d1" value="350" style="margin:0px 0px 0px 578px">
+            <label for="d1">Butter Chicken&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="d2" id="d2" value="320">
+            <label for="d2">Lamb Kebab&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="d3" id="d3" value="310">
+            <label for="d3">Goat Vindaloo</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="d4" id="d4" value="290" style="margin:0px 0px 0px 642px">
+            <label for="d4">Dum Aloo Curry&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="d5" id="d5" value="280">
+            <label for="d5">Chickpea Masala&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="d6" id="d6" value="300">
+            <label for="d6">Paneer Tikka</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="d7" id="d7" value="400" style="margin:0px 0px 0px 615px">
+            <label for="d7">Chicken Biryani&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="d8" id="d8" value="260">
+            <label for="d8">Lemon Rice&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="d9" id="d9" value="270">
+            <label for="d9">Vegetable Pulao</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="d10" id="d10" value="250" style="margin:0px 0px 0px 522px">
+            <label for="d10">Ras Gulla&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="d11" id="d11" value="260">
+            <label for="d11">Ras Malai&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="d12" id="d12" value="240">
+            <label for="d12">Moong Halwa</label>
+            <br><br>
+            
+            <b style="margin:0px 0px 0px 215px">• Continental</b>
+            <br>
+            <input type="checkbox" class="foodItem" name="e1" id="e1" value="280" style="margin:0px 0px 0px 581px">
+            <label for="e1">Potato Au Gratin&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="e2" id="e2" value="350">
+            <label for="e2">Osso Bucco&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="e3" id="e3" value="400">
+            <label for="e3">Filet Mignon</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="e4" id="e4" value="260" style="margin:0px 0px 0px 592px">
+            <label for="e4">Bruschetta&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="e5" id="e5" value="250">
+            <label for="e5">Artichoke Salad&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="e6" id="e6" value="270">
+            <label for="e6">Shrimp Scampi</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="e7" id="e7" value="290" style="margin:0px 0px 0px 561px">
+            <label for="e7">Calamari&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="e8" id="e8" value="280">
+            <label for="e8">Stuffed Mushrooms&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="e9" id="e9" value="300">
+            <label for="e9">Tiramisu</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="e10" id="e10" value="250" style="margin:0px 0px 0px 531px">
+            <label for="e10">Macarons&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="e11" id="e11" value="260">
+            <label for="e11">Crème Brûlée&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="e12" id="e12" value="240">
+            <label for="e12">Split Banana</label>
+            <br><br>
+            
+            <b style="margin:0px 0px 0px 175px">• Italian</b>
+            <br>
+            <input type="checkbox" class="foodItem" name="f1" id="f1" value="290" style="margin:0px 0px 0px 580px">
+            <label for="f1">Margherita&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="f2" id="f2" value="300">
+            <label for="f2">Capricciosa&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="f3" id="f3" value="320">
+            <label for="f3">Prosciutto Parm</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="f4" id="f4" value="270" style="margin:0px 0px 0px 529px">
+            <label for="f4">Trofie Al Pesto&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="f5" id="f5" value="280">
+            <label for="f5">Napolitana&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="f6" id="f6" value="290">
+            <label for="f6">Spaghetti</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="f7" id="f7" value="310" style="margin:0px 0px 0px 620px">
+            <label for="f7">Lasagna Bolognese&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="f8" id="f8" value="300">
+            <label for="f8">Cannoli Vanilla&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="f9" id="f9" value="280">
+            <label for="f9">Gelato</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="f10" id="f10" value="260" style="margin:0px 0px 0px 551px">
+            <label for="f10">Coffee Affogato&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="f11" id="f11" value="270">
+            <label for="f11">Hyacinth Cake&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="f12" id="f12" value="250">
+            <label for="f12">Pain Au</label>
+            <br><br>
+            
+            <b style="margin:0px 0px 0px 202px">• Beverages</b>
+            <br>
+            <input type="checkbox" class="foodItem" name="g1" id="g1" value="230" style="margin:0px 0px 0px 550px">
+            <label for="g1">Apple Cider&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="g2" id="g2" value="220">
+            <label for="g2">Indian Spice Tea&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="g3" id="g3" value="225">
+            <label for="g3">Sangria</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="g4" id="g4" value="230" style="margin:0px 0px 0px 587px">
+            <label for="g4">Coffee Macchiato&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="g5" id="g5" value="240">
+            <label for="g5">Margarita&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="g6" id="g6" value="245">
+            <label for="g6">Cosmopolitan</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="g7" id="g7" value="235" style="margin:0px 0px 0px 532px">
+            <label for="g7">Irish Coffee&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="g8" id="g8" value="225">
+            <label for="g8">Amaretto&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="g9" id="g9" value="230">
+            <label for="g9">Aperol Spritz</label>
+            <br>
+            
+            <input type="checkbox" class="foodItem" name="g10" id="g10" value="235" style="margin:0px 0px 0px 481px">
+            <label for="g10">Moscow Mule&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="g11" id="g11" value="225">
+            <label for="g11">Mimosa&nbsp;&nbsp;</label>
+            
+            <input type="checkbox" class="foodItem" name="g12" id="g12" value="230">
+            <label for="g12">Negroni</label>
+            <br><br><br>
+                     
+           
+            <input type="button" onclick="calculateTotal()" value="Order"  style="color:rgb(25, 55, 25); background-color:white; border: 4px double rgb(25, 55, 25); padding:8px 21px; font-size: 20px; border-radius:20px; margin-left:50px; cursor: pointer; margin-bottom: 20px;" id="myInput">
+           
+            <p id="Totalprice">Totalprice : </p>
+            </center>          
+        </fieldset>
+        </font>
+    </form>
+</div>
+<br><br>
+<!-- Follow us on -->
+
+<center><b style="color: white; font-size: 35px;"><font face="Lucida Handwriting">Follow us on</font></b></center>
+<br><br>
+<div id="follow">
+    <img src="00_insta_19.png" alt="Loading..." height="45px">
+    <p style="margin-left:10px"><font face="Lucida Handwriting" color="white"><b>@greenleafrestaurant</b></font></p> 
+    <img style="margin-left:5%;" src="00_facebook_20.webp" alt="Loading..." height="45px">
+    <p style="margin-left:10px"><font face="Lucida Handwriting" color="white"><b>@greenleafrestaurant</b></font></p>
+    <img style="margin-left:5%;" src="00_twitter_21.png" alt="Loading..." height="45px">
+    <p style="margin-left:10px"><font face="Lucida Handwriting" color="white"><b>@greenleaf092</b></font></p>
+    <img style="margin-left:5%;" src="00_youtube_22.png" alt="Loading..." height="45px">
+    <p style="margin-left:10px"><font face="Lucida Handwriting" color="white"><b>Green Leaf Restaurant</b></font></p>
+</div>
+<br><br>
+
+<!-- Final box -->
+
+<div id="last">
+    <p><font face="arial"><center><b>Copyright @ 2022 Company Pvt Ltd</b></center></font></p>
+</div>
+
+<script >
+    
+var total = 0;
+
+function calculateTotal() {
+    const name = document.getElementById("name").value;
+    const contact = document.getElementById("contact").value;
+    const email = document.getElementById("email").value;
+    const address = document.getElementById("address").value;
+
+    let receipt = `Receipt:\n\nName: ${name}\nContact: ${contact}\nEmail: ${email}\nAddress: ${address}\n\Total Price:\n`;
+    receipt += total;
+    alert(receipt);
+
+    setTimeout(function() {
+        window.location.href = "7_last_page.html"
+    },2000);
+}
+        
+const checkboxes = document.querySelectorAll('.foodItem');
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener("click", function() {
+        total = 0;
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                total += parseFloat(checkbox.value);
+            }
+        });
+        document.getElementById("Totalprice").textContent = "Total Price: " + total;
+    });
+});
+
+    function searchAndHighlight() {
+        var searchQuery = document.getElementById('search').value.trim();
+        
+        if (searchQuery === "") {
+            alert("Please enter a search term.");
+            return;
+        }
+
+        // Remove existing highlights if any
+        removeHighlights();
+
+        // Find the search term on the page
+        var bodyText = document.body.innerHTML;
+        var searchPattern = new RegExp('('+ searchQuery +')', 'gi');
+
+        if (searchPattern.test(bodyText)) {
+            // Highlight the search term
+            document.body.innerHTML = bodyText.replace(searchPattern, '<span class="highlight">$1</span>');
+
+            // Scroll to the first instance of the highlighted term
+            var firstHighlight = document.querySelector(".highlight");
+            if (firstHighlight) {
+                firstHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                firstHighlight.style.color = "red";
+            }
+        } else {
+            alert("No matches found.");
+        }
+    }
+
+    function removeHighlights() {
+        // Remove any existing highlights
+        var highlightedElements = document.querySelectorAll(".highlight");
+        highlightedElements.forEach(function(el) {
+            el.outerHTML = el.innerHTML; // remove the span tags
+        });
+    }
+
+    
+const storedUser = JSON.parse(localStorage.getItem('user'));
+
+// If user data is found, display the username
+if (storedUser && storedUser.username) {
+    document.getElementById('userwelcome').textContent = "Welcome, " + storedUser.username;
+} else {
+    document.getElementById('userwelcome').textContent = 'Welcome, Guest!'; // If no user is logged in
+}
+      
+
+</script>
+</body>
+</html>

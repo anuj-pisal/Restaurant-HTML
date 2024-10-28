@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("00_leaf_background.jpeg");
+    background-repeat: no-repeat;
+        background-attachment: fixed ;
+        background-size: 100% 100%;
+}
+
+
+.signup-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.input_box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.input_box input {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid #39FF14; /* Neon green bottom border */
+    border-top: none; /* No upper border */
+    border-left: none; /* No left border */
+    border-right: none; /* No right border */
+    outline: none;
+    background: none;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.input_box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+
+.input_box label.active {
+    top: 0;
+    transform: translateY(-100%);
+    font-size: 12px;
+    color: #39FF14; 
+}
+
+/* {.fa-solid{
+    font-weight: 900;
+     align-items: end; 
+    float: right;
+    position: absolute;
+    right: 5%;
+    top: 22%;
+    font-size: x-large;
+    color: rgb(124, 134, 124);
+} */
+
+.password_checkbox {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.password_checkbox input {
+    margin-right: 8px;
+}
+
+.password_checkbox p {
+    font-size: 12px;
+    color: #333;
+}
+
+
+.signup_button {
+    width: 100%;
+    padding: 10px;
+    background-color: #39FF14;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.signup_button:hover {
+    background-color: #2ECC71;
+}
+
+
+.login_link {
+    margin-top: 20px;
+}
+
+.login_link a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #39FF14;
+    transition: color 0.3s ease;
+}
+
+.login_link a:hover {
+    color: #2ECC71;
+}

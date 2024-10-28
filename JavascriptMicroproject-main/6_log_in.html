@@ -1,0 +1,237 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="00_title_bar_image.png" type="image/x-icon">
+    <title>The Green Leaf</title>
+</head>
+<style>
+    #back_button{
+        border: 3px solid gray;
+        color:darkgreen;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        font-size: 17px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("00_leaf_background.jpeg");
+    background-repeat: no-repeat;
+        background-attachment: fixed ;
+        background-size: 100% 100%;
+}
+
+
+.signup-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.input_box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.input_box input {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid #39FF14; /* Neon green bottom border */
+    border-top: none; /* No upper border */
+    border-left: none; /* No left border */
+    border-right: none; /* No right border */
+    outline: none;
+    background: none;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.input_box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+
+.input_box label.active {
+    top: 0;
+    transform: translateY(-100%);
+    font-size: 12px;
+    color: #39FF14; 
+}
+
+
+.password_checkbox {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.password_checkbox input {
+    margin-right: 8px;
+}
+
+.password_checkbox p {
+    font-size: 12px;
+    color: #333;
+}
+
+
+.signup_button {
+    width: 100%;
+    padding: 10px;
+    background-color: #39FF14;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.signup_button:hover {
+    background-color: #2ECC71;
+}
+
+
+.login_link {
+    margin-top: 20px;
+}
+
+.login_link a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #39FF14;
+    transition: color 0.3s ease;
+}
+
+.login_link a:hover {
+    color: #2ECC71;
+}
+
+
+</style>
+
+<body>
+
+    <div class="signup-container">
+        <div class="signup-box">
+            <!-- title for form -->
+            <h2>Login</h2>
+            <form id="loginForm" action="#">
+                
+                <!-- input field for email -->
+                <div class="input_box">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <!-- input field for password with checkbox -->
+                <div class="input_box">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+
+       
+                <div class="password_checkbox">
+                    <input type="checkbox" id="showPassword">
+                    <p>Show Password</p>
+                </div>
+
+                <!-- Submit button for signup form -->
+                <button class="signup_button" type="submit">Log in</button>
+
+                <!-- Link for existing users -->
+                <div class="login_link">
+                    <a href="login.html">Already have an account?</a>
+                </div>
+                <p id="message"></p>
+            </form>
+        </div>
+    </div>
+
+      
+</body>
+<script>
+     document.querySelectorAll('.input_box input').forEach(input => {
+            // Add focus event to move label up
+            input.addEventListener('focus', () => {
+                input.nextElementSibling.classList.add('active'); // move label up
+            });
+
+            // Add blur event to move label down only if the input is empty
+            input.addEventListener('blur', () => {
+                if (input.value === '') {
+                    input.nextElementSibling.classList.remove('active'); // move label down
+                }
+            });
+        });
+        
+        const passwordField = document.getElementById('password');
+        const showPasswordCheckbox = document.getElementById('showPassword');
+
+        showPasswordCheckbox.addEventListener('click', () => {
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                
+            } else {
+                passwordField.type = 'password';
+                
+            }
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Retrieve stored user details from localStorage
+            const storedUser = JSON.parse(localStorage.getItem('user'));
+
+            // Check if email and password match
+            if (storedUser && storedUser.email === email && storedUser.password === password) {
+                document.getElementById('message').textContent = 'Login successful! Welcome ' + storedUser.username;
+                setTimeout(() => {
+                    window.location.href = '1_home.html';
+                }, 2000);
+            } else {
+                document.getElementById('message').textContent = 'Invalid email or password';
+            }
+        });
+</script>
+</html>
